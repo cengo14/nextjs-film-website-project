@@ -80,9 +80,9 @@ Proje TMDB API üzerinden veri alır. Daha fazla bilgi için [TMDB API belgeleri
 
 
 ## Ekran Görselleri
-[!Uygulama Görüntüsü](./screenshots/ss1.png)
-[!Uygulama Görüntüsü](./screenshots/ss2.png)
-[!Uygulama Görüntüsü](./screenshots/ss3.png)
+![Uygulama Görüntüsü](./screenshots/ss1.png)
+![Uygulama Görüntüsü](./screenshots/ss2.png)
+![Uygulama Görüntüsü](./screenshots/ss3.png)
 
 
 ## Lisans
