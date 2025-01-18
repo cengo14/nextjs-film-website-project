@@ -7,12 +7,11 @@ const getMovie = async (id) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5Njk4MTQxMTcyNGM0NDM1ODA4YzNiYzI0MmExNzk2NSIsIm5iZiI6MTczMjMwNTQzNi43ODgzMDksInN1YiI6IjY2ZDg0ZDlmYjUyNzMzNmQ3ZjZjZTdlYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.PFtseCGI3QwgZIpxPo4ztCYSZb7KamZCfyB-_2HZYUc",
+      Authorization: `Bearer ${process.env.SECRET_API_KEY}`,
     },
   };
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}?language=tr-TR`,
+    `${process.env.NEXT_PUBLIC_TMDB_BASE_URL}/3/movie/${id}?language=tr-TR`,
     options
   );
 
@@ -39,7 +38,7 @@ const Page = async ({ params }) => {
         <Image
           style={{ objectFit: "cover" }}
           fill
-          src={`https://image.tmdb.org/t/p/original${
+          src={`${process.env.NEXT_PUBLIC_TMDB_BASE_URL}/t/p/original${
             movieDetail?.backdrop_path || movieDetail?.poster_path
           }`}
         />

@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+# Film Listeleme Sitesi
 
-First, run the development server:
+Bu proje, kullanıcıların popüler filmleri, tüm zamanların en iyi filmlerini ve son çıkan filmleri listeleyebileceği bir web uygulamasıdır. **Next.js** ile geliştirilmiş olup, modern bir tasarım ve kullanıcı dostu bir arayüz sunar. Film verileri **TMDB API** üzerinden alınmaktadır.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Özellikler
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Film Listeleme:**
+  - **Popüler Filmler:** Kullanıcı en popüler filmleri listeleyebilir.  
+  - **Tüm Zamanların En İyileri:** Tüm zamanların en beğenilen filmlerini görüntüleyebilir.  
+  - **Son Çıkanlar:** En yeni filmleri listeleyebilir.  
+- **Arama Özelliği:**
+  - Arama çubuğuna ilgili başlıklar yazılarak spesifik filmler bulunabilir.  
+- **Film Detay Sayfası:**
+  - Her film kartına tıklayarak detay sayfasına erişilebilir.
+  - Detay sayfasında film açıklaması, türü, yayın tarihi ve daha fazlası yer alır.  
+- **Tema Desteği:**
+  - **Next-Theme** kullanılarak açık ve koyu mod desteği sağlanmıştır.  
+- **Responsive Tasarım:**
+  - **Tailwind CSS** ile her cihaz için optimize edilmiş kullanıcı arayüzü.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Kullanılan Teknolojiler
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Framework ve Araçlar:
+- **Next.js**  
+- **TMDB API**
 
-## Learn More
+### Kütüphaneler:
+- **Tailwind CSS**  
+- **Next-Theme**
 
-To learn more about Next.js, take a look at the following resources:
+## Kurulum ve Çalıştırma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Proje dizinine gidin:
+   ```bash
+   cd nextjs-film-website-project
+   ```
+2. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+3. `.env.local` dosyasını oluşturun ve TMDB API anahtarınızı ekleyin:
+   ```env
+   NEXT_PUBLIC_TMDB_API_KEY=<API_KEY>
+   NEXT_PUBLIC_TMDB_BASE_URL=https://api.themoviedb.org
+   ```
+4. Uygulamayı geliştirme modunda başlatın:
+   ```bash
+   npm run dev
+   ```
+5. Tarayıcınızda `http://localhost:3000` adresine gidin.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Ekran Görüntüleri
 
-## Deploy on Vercel
+- **Ana Sayfa:** Popüler filmlerin listelendiği bir alan.  
+- **Film Detay Sayfası:** Seçilen filme ait bilgilerin yer aldığı detaylı bir sayfa.  
+- **Tema Desteği:** Açık ve koyu mod örnekleri.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## API Kullanımı
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proje TMDB API üzerinden veri alır. Daha fazla bilgi için [TMDB API belgelerine](https://developer.themoviedb.org/docs) göz atabilirsiniz.
+
+## Katkıda Bulunma
+
+1. Bu projeyi forklayın.  
+2. Yeni bir dal oluşturun:  
+   ```bash
+   git checkout -b yeni-ozellik
+   ```
+3. Değişikliklerinizi commit edin:  
+   ```bash
+   git commit -m "Yeni bir özellik eklendi"
+   ```
+4. Dalınızı push edin:  
+   ```bash
+   git push origin yeni-ozellik
+   ```
+5. Pull Request oluşturun.
+
+
+## Ekran Görselleri
+[!Uygulama Görüntüsü](./screenshots/ss1.png)
+[!Uygulama Görüntüsü](./screenshots/ss2.png)
+[!Uygulama Görüntüsü](./screenshots/ss3.png)
+
+
+## Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+
+---
