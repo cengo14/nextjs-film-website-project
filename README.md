@@ -42,7 +42,7 @@ Bu proje, kullanıcıların popüler filmleri, tüm zamanların en iyi filmlerin
    ```
 3. `.env.local` dosyasını oluşturun ve TMDB API anahtarınızı ekleyin:
    ```env
-   NEXT_PUBLIC_TMDB_API_KEY=<API_KEY>
+   SECRET_API_KEY=your_secret_key
    NEXT_PUBLIC_TMDB_BASE_URL=https://api.themoviedb.org
    ```
 4. Uygulamayı geliştirme modunda başlatın:
